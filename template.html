@@ -1,0 +1,20 @@
+﻿<div style="overflow:auto; width:100%;height:100%;" class={{qvId}}>
+    <span style="color:#002e5f" ng-mouseover="showMenu()"><img ng-src="/Extensions/Single-filter/content/{{iconName}}" width="{{layout.iconSize}}" height="{{layout.iconSize}}"/><span style="font-weight: bold;color:{{layout.textColor}}" ng-show="showing">Men&uacute;</span></span>
+    <div class="lui-nopad lui-popover__body ng-scope">
+        <div class="toolbar-wrapper ng-scope ng-isolate-scope">
+            <div class="">
+                <div class="sel-toolbar-list-wrapper">
+                    <div class="lui-popover" ng-mouseleave="hide()" ng-show="showing" style="{{style}}">
+                        <div style="font-size:{{layout.Fontsize}};font-weight: bold;">{{layout.qListObject.qDimensionInfo.qFallbackTitle}}</div>
+                        <div class="" style="margin: 5px 0 5px 20px" ng-click="filter(item.elemNumber)" data-value="{{item.elemNumber}}" ng-repeat="item in data">
+                            <label ng-click="filter(item.elemNumber)" class="container">{{item.text}}
+                                <input ng-click="filter(item.elemNumber)" type="checkbox" ng-checked="item.state == 'S'">
+                                <span class="checkmark"></span>
+                              </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
