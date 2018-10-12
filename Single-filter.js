@@ -48,7 +48,6 @@ define([
 				$scope.backendApi.selectValues(0, [val], true);
 			};
 			
-			
 
 			$scope.iconStyle = "lui-icon lui-icon--large lui-icon--handle";
 			
