@@ -1,5 +1,5 @@
 ﻿<div style="overflow:auto; width:100%;height:100%;" class={{qvId}}>
-    <span style="color:#002e5f" ng-mouseover="showMenu()"><img ng-src="/Extensions/Single-filter/content/{{iconName}}" width="{{layout.iconSize}}" height="{{layout.iconSize}}"/><span style="font-weight: bold;color:{{layout.textColor}}" ng-show="showing">Men&uacute;</span></span>
+    <span style="color:#002e5f" ng-mouseover="showMenu()"><img ng-src="/Extensions/Single-filter/content/{{iconName}}" width="{{layout.iconSize}}" height="{{layout.iconSize}}"/><span style="font-weight: bold;color:{{layout.textColor}}" ng-show="showing && layout.iconText.length > 0">{{layout.iconText}}</span></span>
     <div class="lui-nopad lui-popover__body ng-scope">
         <div class="toolbar-wrapper ng-scope ng-isolate-scope">
             <div class="">

@@ -14,6 +14,8 @@ define([
 		
         controller: ['$scope', '$element', function ($scope, $element) {
 
+			console.log("single layout: ",$scope.layout);
+
 			$scope.qvId = $scope.layout.qInfo.qId;
 
 
@@ -156,6 +158,11 @@ define([
 									label: "Icon size",
 									expression: "optional",
 									defaultValue: "24"
+								},
+								iconText: {
+									type: "string",
+									ref: "iconText",
+									label: "Icon text",
 								}
 							}
 						}
